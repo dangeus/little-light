@@ -1,4 +1,5 @@
 import RoomCard, {Room} from "@/components/RoomCard";
+import Link from "next/link";
 
 export default function CampfiresList() {
     const rooms: Room[] = [
@@ -30,9 +31,9 @@ export default function CampfiresList() {
 
     return (
         <div className="bg-panel border-3 border-line p-4 flex flex-col gap-3 h-fit">
-            <div className="flex justify-between">
+            <div className="flex items-center justify-between">
                 <p className="text-2xl font-bold">Campfires</p>
-                <button className="text-accent-light underline">All rooms</button>
+                <Link href="/campfires" className="text-accent-light underline">All rooms</Link>
             </div>
             {rooms.slice(0, 3).map((room) => <RoomCard key={room.id} room={room}/>)}
         </div>

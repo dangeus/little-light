@@ -11,7 +11,7 @@ type FriendCardProps = {
 
 export default function FriendCard({friend}: FriendCardProps) {
     return (
-        <div className="flex p-3 gap-3 items-center w-50">
+        <div className="flex p-3 gap-3 items-center border-3 border-transparent hover:bg-ghost hover:border-ghost-line">
             <div
                 className="size-10 outline-3 outline-outline relative"
                 style={{background: friend.avatarColor}}>

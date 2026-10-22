@@ -1,4 +1,5 @@
 import FriendCard, {Friend} from "@/components/FriendCard";
+import Link from "next/link";
 
 export default function FriendsList() {
     const friends: Friend[] = [
@@ -36,9 +37,9 @@ export default function FriendsList() {
 
     return (
         <div className="bg-panel border-3 border-line p-4 flex flex-col gap-2 h-fit w-full">
-            <div className="flex justify-between">
+            <div className="flex items-center justify-between">
                 <p className="text-2xl">Friends</p>
-                <button className="text-accent-light underline">View all</button>
+                <Link href="/friends" className="text-accent-light underline">View all</Link>
             </div>
             <div>
                 {friends.map((friend) => <FriendCard key={friend.name} friend={friend}/>)}
