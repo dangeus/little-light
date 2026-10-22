@@ -35,7 +35,7 @@ export default function FriendsList() {
     ];
 
     return (
-        <div className="bg-panel border-3 border-line w-fit p-4 flex flex-col gap-2">
+        <div className="bg-panel border-3 border-line p-4 flex flex-col gap-2 h-fit w-full">
             <div className="flex justify-between">
                 <p className="text-2xl">Friends</p>
                 <button className="text-accent-light underline">View all</button>
