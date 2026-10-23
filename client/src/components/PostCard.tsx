@@ -1,3 +1,5 @@
+import SparkButton from "@/components/SparkButton";
+
 export type Post = {
     id: number;
     author: string;
@@ -35,7 +37,7 @@ export default function PostCard({post}: PostCardProps) {
             <div className="border-t-2 border-dashed border-line"/>
             <div className="flex justify-between p-4">
                 <div className="flex gap-12">
-                    <p>{post.sparks} sparks</p>
+                    <SparkButton initialSparks={post.sparks} />
                     <p>{post.comments} comments</p>
                 </div>
                 <button className="text-accent">Read more</button>
