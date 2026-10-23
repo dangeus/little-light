@@ -4,7 +4,7 @@ export default function ProfileHeader() {
     return (
         <div className="bg-panel border-3 border-line p-4">
             <div className="flex justify-end">
-                <button>Edit profile</button>
+                <button className="border-3 border-line bg-panel-dark p-3">Edit profile</button>
             </div>
 
             <div className="flex gap-3">
