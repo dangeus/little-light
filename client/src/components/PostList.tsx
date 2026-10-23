@@ -37,7 +37,7 @@ export default function PostList() {
     ];
 
     return (
-        <div className="flex flex-col gap-6  w-200">
+        <div className="flex flex-col gap-6">
             <CreatePostCard/>
             {posts.map((post)=> <PostCard key={post.id} post={post}/>)}
         </div>
