@@ -12,8 +12,8 @@ export default function ProfileHeader() {
                     <AvatarIcon/>
                 </div>
                 <div>
-                    <p className="text-4xl">Dangeus</p>
-                    <p className="">Sitting at lo-fi by the river listens to chillhop and post-rock</p>
+                    <h1 className="text-4xl">Dangeus</h1>
+                    <p>Sitting at lo-fi by the river listens to chillhop and post-rock</p>
                     <p>43 / 500 XP</p>
                 </div>
             </div>
