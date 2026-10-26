@@ -24,7 +24,7 @@ export default function RootLayout({children}: LayoutProps<"/">) {
             lang="en"
             className={`${pixelify.variable} ${silkscreen.variable} h-full antialiased`}
         >
-        <body className="min-h-full font-main">
+        <body className="min-h-full font-main pt-8 px-48">
         {children}
         </body>
         </html>

@@ -4,7 +4,7 @@ type DownArrowIconProps = {
 
 export default function DownArrowIcon({size = 32}: DownArrowIconProps) {
     return (
-        <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="3 5 14 10" shape-rendering="crispEdges">
+        <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="3 5 14 10" shapeRendering="crispEdges">
             <path fill="#CC6600" d="M5 7H15V9H13V11H11V13H9V11H7V9H5Z"/>
         </svg>
     );

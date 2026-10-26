@@ -1,10 +1,15 @@
 import Link from "next/link";
 import DownArrowIcon from "@/components/icons/DownArrowIcon";
+import FireIcon from "@/components/icons/FireIcon";
 
 export default function Home() {
     return (
         <div>
-            <p className="text-3xl font-bold">Little Light</p>
+            <div className="flex items-center gap-3">
+                <FireIcon size={48}/>
+                <p className="text-3xl font-bold">Little Light</p>
+            </div>
+
             <div className="text-center flex flex-col items-center min-h-[95vh] justify-between">
                 <div className="max-w-140 flex flex-col items-center gap-6">
                     <p className="text-soft text-xl">music social network</p>
