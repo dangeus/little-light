@@ -26,7 +26,7 @@ export default function PostCard({post}: PostCardProps) {
                 </div>
             </div>
             <p className="text-accent-light text-2xl font-bold">{post.title}</p>
-            <p className="line-clamp-6">{post.text}</p>
+            <p className="line-clamp-6 wrap-anywhere">{post.text}</p>
             {post.track && <div className="border-3 border-line bg-panel-dark p-3 flex gap-2 items-center">
                 <div className="size-10 bg-accent outline-2 outline-outline -outline-offset-3 border-black"/>
                 <div>

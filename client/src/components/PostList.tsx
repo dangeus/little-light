@@ -8,7 +8,7 @@ export default function PostList() {
             author: "Dangeus",
             time: "2 hours ago",
             title: "Rainy night playlist",
-            text: "Put together a slow playlist for nights when the rain will not stop. Mostly piano and soft guitar, nothing louder than the fire. Come sit in Lo-fi by the river if you want to hear it together.",
+            text: "Put ьвыдлотап бывьлоапотвыдлапоывдлпоывлдоопыолвроаполывроаполвыыграшщугцркуцгшлркуулоцроаолвыроаловыраылвораыволарыволарывлоарыволарвылоарывлоарывлоаывролавыралоывралоывраыволраыволарывлоарыволарывлаовыраловырлаовыраолвыравыtogether a slow playlist for nights when the rain will not stop. Mostly piano and soft guitar, nothing louder than the fire. Come sit in Lo-fi by the river if you want to hear it together.",
             sparks: 24,
             comments: 6,
             track: {
