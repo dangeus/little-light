@@ -7,16 +7,17 @@ export default function ProfileHeader() {
             <div className="flex justify-end">
                 <button className="border-3 border-line bg-panel-dark p-3">Edit profile</button>
             </div>
-
-            <div className="flex gap-3 items-end">
-                <div
-                    className="size-30 flex items-center justify-center bg-ember border-3 border-accent outline-3 outline-outline shrink-0">
-                    <AvatarIcon/>
-                </div>
-                <div className="flex flex-col">
-                    <h1 className="text-4xl">Dangeus</h1>
-                    <span>Sitting at lo-fi by the river listens to chillhop and post-rock</span>
-                    <span>43 / 500 XP</span>
+            <div className="flex items-end justify-between">
+                <div className="flex items-end gap-3">
+                    <div
+                        className="size-30 flex items-center justify-center bg-ember border-3 border-accent outline-3 outline-outline shrink-0">
+                        <AvatarIcon/>
+                    </div>
+                    <div className="flex flex-col">
+                        <h1 className="text-4xl">Dangeus</h1>
+                        <span>Sitting at lo-fi by the river listens to chillhop and post-rock</span>
+                        <span>43 / 500 XP</span>
+                    </div>
                 </div>
                 <ul className="flex">
                     <HeaderStat value={48} name="posts" borderClass="border-3" />
