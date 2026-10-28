@@ -7,15 +7,30 @@ export default function ProfileHeader() {
                 <button className="border-3 border-line bg-panel-dark p-3">Edit profile</button>
             </div>
 
-            <div className="flex gap-3">
-                <div className="size-20 flex items-center justify-center bg-ember border-3 border-accent outline-3 outline-outline shrink-0">
+            <div className="flex gap-3 items-end">
+                <div
+                    className="size-30 flex items-center justify-center bg-ember border-3 border-accent outline-3 outline-outline shrink-0">
                     <AvatarIcon/>
                 </div>
-                <div>
+                <div className="flex flex-col">
                     <h1 className="text-4xl">Dangeus</h1>
-                    <p>Sitting at lo-fi by the river listens to chillhop and post-rock</p>
-                    <p>43 / 500 XP</p>
+                    <span>Sitting at lo-fi by the river listens to chillhop and post-rock</span>
+                    <span>43 / 500 XP</span>
                 </div>
+                <ul className="flex">
+                    <li className="border-3 border-line bg-panel-dark p-2 flex flex-col items-center">
+                        <span className="font-bold text-2xl">48</span>
+                        <span className="text-muted font-small text-xs"> posts</span>
+                    </li>
+                    <li className="border-y-3 border-line bg-panel-dark p-2 flex flex-col items-center">
+                        <span className="font-bold text-2xl">126</span>
+                        <span className="text-muted font-small text-xs">friends</span>
+                    </li>
+                    <li className="border-3 border-line bg-panel-dark p-2 flex flex-col items-center">
+                        <span className="font-bold text-2xl">9</span>
+                        <span className="text-muted font-small text-xs">fires</span>
+                    </li>
+                </ul>
             </div>
         </div>
     )

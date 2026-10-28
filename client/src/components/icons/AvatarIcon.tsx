@@ -2,7 +2,7 @@ type AvatarIconProps = {
     size?: number;
 }
 
-export default function AvatarIcon({size = 42}: AvatarIconProps) {
+export default function AvatarIcon({size = 96}: AvatarIconProps) {
     return (
         <svg width={size} height={size} viewBox="0 0 10 10" shapeRendering="crispEdges" aria-hidden="true">
             <rect x="4" y="1" width="2" height="1" fill="#ffb15e"/>
