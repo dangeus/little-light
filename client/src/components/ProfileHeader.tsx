@@ -1,4 +1,5 @@
 import AvatarIcon from "@/components/icons/AvatarIcon";
+import HeaderStat from "@/components/HeaderStat";
 
 export default function ProfileHeader() {
     return (
@@ -18,18 +19,9 @@ export default function ProfileHeader() {
                     <span>43 / 500 XP</span>
                 </div>
                 <ul className="flex">
-                    <li className="border-3 border-line bg-panel-dark p-2 flex flex-col items-center">
-                        <span className="font-bold text-2xl">48</span>
-                        <span className="text-muted font-small text-xs"> posts</span>
-                    </li>
-                    <li className="border-y-3 border-line bg-panel-dark p-2 flex flex-col items-center">
-                        <span className="font-bold text-2xl">126</span>
-                        <span className="text-muted font-small text-xs">friends</span>
-                    </li>
-                    <li className="border-3 border-line bg-panel-dark p-2 flex flex-col items-center">
-                        <span className="font-bold text-2xl">9</span>
-                        <span className="text-muted font-small text-xs">fires</span>
-                    </li>
+                    <HeaderStat value={48} name="posts" borderClass="border-3" />
+                    <HeaderStat value={126} name="friends" borderClass="border-y-3" />
+                    <HeaderStat value={9} name="fires" borderClass="border-3" />
                 </ul>
             </div>
         </div>
