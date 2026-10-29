@@ -48,6 +48,10 @@ export default function PostCard({post}: PostCardProps) {
             <p className="text-accent-light text-2xl font-bold">{post.title}</p>
             <p ref={textRef}
                className={`wrap-anywhere text-soft text-xl ${isOpen ? "" : "line-clamp-6"}`}>{post.text}</p>
+            {isClamped &&
+                <div className="flex justify-end">
+                    <button className="text-accent w-fit" onClick={handleReadMore}>{isOpen ? "Hide" : "Show more"}</button>
+                </div>}
             {post.track && <div className="border-3 border-line bg-panel-dark p-3 flex gap-2 items-center">
                 <div className="size-10 bg-accent outline-2 outline-outline -outline-offset-3 border-black"/>
                 <div>
@@ -61,7 +65,6 @@ export default function PostCard({post}: PostCardProps) {
                     <SparkButton initialSparks={post.sparks}/>
                     <p>{post.comments} comments</p>
                 </div>
-                {isClamped && <button className="text-accent" onClick={handleReadMore}>{isOpen ? "Hide" : "Show more"}</button>}
             </div>
         </div>
     )
