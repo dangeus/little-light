@@ -33,7 +33,7 @@ export default function PostCard({post}: PostCardProps) {
     }, [])
 
     function handleReadMore() {
-        setIsOpen(isOpen => !isOpen)
+        setIsOpen(prev => !prev)
     }
 
     return (
@@ -61,7 +61,7 @@ export default function PostCard({post}: PostCardProps) {
                     <SparkButton initialSparks={post.sparks}/>
                     <p>{post.comments} comments</p>
                 </div>
-                {isClamped && <button className="text-accent" onClick={handleReadMore}>Read more</button>}
+                {isClamped && <button className="text-accent" onClick={handleReadMore}>{isOpen ? "Hide" : "Show more"}</button>}
             </div>
         </div>
     )
