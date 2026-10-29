@@ -20,6 +20,8 @@ type PostCardProps = {
 
 export default function PostCard({post}: PostCardProps) {
     const [isClamped, setIsClamped] = useState<boolean>(false)
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+
     const textRef = useRef<HTMLParagraphElement>(null)
 
     useEffect(() => {
@@ -29,6 +31,10 @@ export default function PostCard({post}: PostCardProps) {
             setIsClamped(text.scrollHeight > text.clientHeight)
         }
     }, [])
+
+    function handleReadMore() {
+        setIsOpen(isOpen => !isOpen)
+    }
 
     return (
         <div className="bg-panel border-3 border-line p-4 flex flex-col gap-2">
@@ -40,7 +46,8 @@ export default function PostCard({post}: PostCardProps) {
                 </div>
             </div>
             <p className="text-accent-light text-2xl font-bold">{post.title}</p>
-            <p ref={textRef} className="line-clamp-6 wrap-anywhere text-soft text-xl">{post.text}</p>
+            <p ref={textRef}
+               className={`wrap-anywhere text-soft text-xl ${isOpen ? "" : "line-clamp-6"}`}>{post.text}</p>
             {post.track && <div className="border-3 border-line bg-panel-dark p-3 flex gap-2 items-center">
                 <div className="size-10 bg-accent outline-2 outline-outline -outline-offset-3 border-black"/>
                 <div>
@@ -54,7 +61,7 @@ export default function PostCard({post}: PostCardProps) {
                     <SparkButton initialSparks={post.sparks}/>
                     <p>{post.comments} comments</p>
                 </div>
-                {isClamped && <button className="text-accent">Read more</button>}
+                {isClamped && <button className="text-accent" onClick={handleReadMore}>Read more</button>}
             </div>
         </div>
     )
