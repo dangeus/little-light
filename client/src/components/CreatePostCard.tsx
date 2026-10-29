@@ -15,7 +15,7 @@ export default function CreatePostCard() {
                     <CreatePostButton>Attach track</CreatePostButton>
                     <CreatePostButton>Image</CreatePostButton>
                 </div>
-                <button className="bg-accent text-black border-3 px-3">Post</button>
+                <button className="bg-accent hover:bg-accent-light text-black border-3 px-3">Post</button>
             </div>
         </div>
     )

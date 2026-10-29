@@ -50,10 +50,10 @@ export default function PostCard({post}: PostCardProps) {
                className={`wrap-anywhere text-soft text-xl ${isOpen ? "" : "line-clamp-6"}`}>{post.text}</p>
             {isClamped &&
                 <div className="flex justify-end">
-                    <button className="text-accent w-fit" onClick={handleReadMore}>{isOpen ? "Hide" : "Show more"}</button>
+                    <button className="text-accent hover:text-accent-light w-fit" onClick={handleReadMore}>{isOpen ? "Hide" : "Show more"}</button>
                 </div>}
             {post.track && <div className="border-3 border-line bg-panel-dark p-3 flex gap-2 items-center">
-                <div className="size-10 bg-accent outline-2 outline-outline -outline-offset-3 border-black"/>
+                <div className="size-10 bg-accent outline-2 outline-outline -outline-offset-3 border-black hover:bg-accent-light"/>
                 <div>
                     <p className="leading-4">{post.track.title}</p>
                     <p className="text-sm text-muted">{post.track.artist}</p>
