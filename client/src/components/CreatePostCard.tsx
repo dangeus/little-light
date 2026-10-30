@@ -1,3 +1,5 @@
+import AccentButton from "@/components/AccentButton";
+
 function CreatePostButton({children}: { children: string }) {
     return (
         <button className="p-1 border-3 border-ghost-line bg-ghost">{children}</button>
@@ -15,7 +17,7 @@ export default function CreatePostCard() {
                     <CreatePostButton>Attach track</CreatePostButton>
                     <CreatePostButton>Image</CreatePostButton>
                 </div>
-                <button className="bg-accent hover:bg-accent-light text-black border-3 px-3">Post</button>
+                <AccentButton>Post</AccentButton>
             </div>
         </div>
     )
