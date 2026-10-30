@@ -10,7 +10,7 @@ export default function Profile() {
                 <ProfileHeader/>
                 <PostList/>
             </div>
-            <div className="flex flex-col gap-6 w-80">
+            <div className="flex flex-col gap-6">
                 <CampfiresList/>
                 <FriendsList/>
             </div>

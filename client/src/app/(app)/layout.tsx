@@ -5,7 +5,7 @@ export default function AppLayout({children}: { children: React.ReactNode }) {
     return (
         <div className="flex gap-6 justify-center">
             <Sidebar/>
-            <main>{children}</main>
+            <main className="w-full">{children}</main>
         </div>
     )
 }
