@@ -21,7 +21,7 @@ export default function Sidebar() {
     ]
 
     return (
-        <aside className="size-fit bg-panel border-3 border-line flex flex-col gap-8 p-6">
+        <aside className="h-fit min-w-64 bg-panel border-3 border-line flex flex-col gap-8 p-6">
             <div>
                 <Link href="/" className="text-3xl">Little Light</Link>
                 <p className="font-small text-muted text-sm">music by the fire</p>
